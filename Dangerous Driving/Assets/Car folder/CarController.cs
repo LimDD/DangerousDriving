@@ -14,7 +14,7 @@ public class CarController : MonoBehaviour
     public Transform rearDriverT, rearPassengerT;
 
     public float maxSteerAngle = 30f;
-    public float motorForce = 300f;
+    public float motorForce = 1500f;
 
     public void GetInput()
     {
@@ -28,12 +28,16 @@ public class CarController : MonoBehaviour
         m_steeringAngle = maxSteerAngle * m_horizontalInput;
         frontDriverW.steerAngle = m_steeringAngle;
         frontPassengerW.steerAngle = m_steeringAngle;
+        //frontDriverW.ConfigureVehicleSubsteps(5, 5, 1);
     }
 
     private void Accelerate()
     {
         frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;
+
+        rearDriverW.motorTorque = m_verticalInput * motorForce;
+        rearPassengerW.motorTorque = m_verticalInput * motorForce;
     }
 
     private void UpdateWheelPoses()
@@ -67,6 +71,6 @@ public class CarController : MonoBehaviour
         GetInput();
         Steer();
         Accelerate();
-        //UpdateWheelPoses();
+        UpdateWheelPoses();
     }
 }
