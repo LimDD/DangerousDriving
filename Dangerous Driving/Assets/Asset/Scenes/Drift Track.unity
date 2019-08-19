@@ -84976,6 +84976,7 @@ GameObject:
   - component: {fileID: 1580685389}
   - component: {fileID: 1580685383}
   - component: {fileID: 1580654306}
+  - component: {fileID: 1580654308}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -84992,19 +84993,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1580654305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba2e92a744fd97c47ba7d3158604aad7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontDriverW: {fileID: 1929803679}
-  frontPassengerW: {fileID: 272379463}
-  rearDriverW: {fileID: 1462865811}
-  rearPassengerW: {fileID: 1016530602}
-  frontDriverT: {fileID: 130976993}
-  frontPassengerT: {fileID: 361030175}
-  rearDriverT: {fileID: 1648898734}
-  rearPassengerT: {fileID: 972767776}
-  maxSteerAngle: 30
-  motorForce: 1500
+  m_CarDriveType: 2
+  m_WheelColliders:
+  - {fileID: 1929803679}
+  - {fileID: 272379463}
+  - {fileID: 1462865811}
+  - {fileID: 1016530602}
+  m_WheelMeshes:
+  - {fileID: 130976992}
+  - {fileID: 361030174}
+  - {fileID: 1648898733}
+  - {fileID: 972767775}
+  m_WheelEffects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
+  m_MaximumSteerAngle: 30
+  m_SteerHelper: 0
+  m_TractionControl: 0
+  m_FullTorqueOverAllWheels: 3000
+  m_ReverseTorque: 3000
+  m_MaxHandbrakeTorque: 3000
+  m_Downforce: 100
+  m_SpeedType: 1
+  m_Topspeed: 300
+  m_RevRangeBoundary: 1
+  m_SlipLimit: 0
+  m_BrakeTorque: 3000
 --- !u!1 &1580654307
 GameObject:
   m_ObjectHideFlags: 0
@@ -85023,6 +85043,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1580654308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580654305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1580654309
 GameObject:
   m_ObjectHideFlags: 0
