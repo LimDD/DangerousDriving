@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 53
+  controlID: 126
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 1922, y: 1228}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000100000100
+  m_LowResolutionForAspectRatios: 00000000000100000100
   m_XRRenderMode: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -360,9 +360,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4e5f0000
-      m_LastClickedID: 24398
-      m_ExpandedIDs: 78fbffff524500003a470000ec520000fc5300004e5f0000ce620000
+      m_SelectedIDs: 3e300000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 24f4ffff78fbffff524500003a4700008e4c0000ec520000fc530000ce5b0000045f00004e5f000094600000ce620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -668,11 +668,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Asset/Scripts
+    - Assets/Asset
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Asset/Scripts
+  - Assets/Asset
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Justin Yeung\Documents\SDP\DangerousDriving\Dangerous
     Driving
@@ -680,8 +680,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 24}
-    m_SelectedIDs: 643d0000
-    m_LastClickedID: 15716
+    m_SelectedIDs: 902f0000
+    m_LastClickedID: 12176
     m_ExpandedIDs: 00000000e62e0000902f00001e310000f83700007c3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000014d001006e3a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
