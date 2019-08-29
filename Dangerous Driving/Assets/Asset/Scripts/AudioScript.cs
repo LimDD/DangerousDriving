@@ -9,6 +9,7 @@ public class AudioScript : MonoBehaviour
     public AudioSource MusicSource;
     void Start()
     {
+        MusicSource = GetComponent<AudioSource>();
         MusicSource.clip = MusicClip;
     }
 

@@ -18,7 +18,7 @@ public class GameOptions : MonoBehaviour
     void Start()
     {
         SetQualitySettings();
-        SetVolumeSettings();
+        //SetVolumeSettings();
     }
 
     void SetVolumeSettings()
