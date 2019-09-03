@@ -25,8 +25,11 @@ public class SwitchCamera : MonoBehaviour
         // Start the game on birds eye view
         birdsEyeCamera.enabled = true;
         birdsEyeCameraAudio.enabled = true;
+        birdsEyeCamera.tag = "MainCamera";
+
         thirdPersonCamera.enabled = false;
         thirdPersonCameraAudio.enabled = false;
+        thirdPersonCameraAudio.tag = "Untagged";
     }
 
     // Update is called once per frame
@@ -61,17 +64,21 @@ public class SwitchCamera : MonoBehaviour
     {
         thirdPersonCamera.enabled = false;
         thirdPersonCameraAudio.enabled = false;
+        thirdPersonCameraAudio.tag = "Untagged";
 
         birdsEyeCamera.enabled = true;
         birdsEyeCameraAudio.enabled = true;
+        birdsEyeCamera.tag = "MainCamera";
     }
 
     private void SwitchToThirdPersonCamera()
     {
         birdsEyeCamera.enabled = false;
         birdsEyeCameraAudio.enabled = false;
+        birdsEyeCamera.tag = "Untagged";
 
         thirdPersonCamera.enabled = true;
         thirdPersonCameraAudio.enabled = true;
+        thirdPersonCameraAudio.tag = "MainCamera";
     }
 }

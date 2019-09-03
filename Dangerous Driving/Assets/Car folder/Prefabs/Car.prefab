@@ -5304,7 +5304,7 @@ GameObject:
   - component: {fileID: 5594611417361477756}
   - component: {fileID: 5594611417361512147}
   - component: {fileID: 5594611417361512149}
-  - component: {fileID: 5594611417361512151}
+  - component: {fileID: 755162645}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -5413,7 +5413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5594611417361512151
+--- !u!114 &755162645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
