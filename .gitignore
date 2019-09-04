@@ -57,3 +57,8 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+*.dwlt
+Dangerous Driving/obj/Debug/Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+Dangerous Driving/obj/Debug/Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
+Dangerous Driving/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
+Dangerous Driving/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
