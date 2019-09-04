@@ -5,9 +5,9 @@ using UnityEngine;
 public class CameraStable : MonoBehaviour
 {
     public GameObject Car;
-    private float CarX;
-    private float CarY;
-    private float CarZ;
+    public float CarX;
+    public float CarY;
+    public float CarZ;
 
     void Start()
     {
