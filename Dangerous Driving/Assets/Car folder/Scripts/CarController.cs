@@ -18,6 +18,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
     public class CarController : MonoBehaviour
     {
+
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
         [SerializeField] private GameObject[] m_WheelMeshes = new GameObject[4];
@@ -71,6 +72,13 @@ namespace UnityStandardAssets.Vehicles.Car
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
         }
 
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("PickUp"))
+            {
+                other.gameObject.SetActive(false);
+            }
+        }
 
         private void GearChanging()
         {
