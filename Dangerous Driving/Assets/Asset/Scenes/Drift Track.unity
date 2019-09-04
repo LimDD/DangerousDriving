@@ -23729,8 +23729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16becd5e1c9c5914a83cc78bd3486d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidPrefab: {fileID: 100000, guid: af6c1d82d375aa54c81180d14d62761e, type: 3}
-  carCordinate: {fileID: 0}
+  asteroidPrefab: {fileID: 4261693360867549205, guid: d1de847226e29bc4b98014ea2a068dbf,
+    type: 3}
+  carCordinate: {fileID: 415151422}
   spawnTimer: 0.7
   positionOfCar: {x: 0, y: 0, z: 0}
 --- !u!1 &416908696
