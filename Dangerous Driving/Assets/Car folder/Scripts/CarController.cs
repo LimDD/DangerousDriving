@@ -48,8 +48,6 @@ namespace UnityStandardAssets.Vehicles.Car
         private Rigidbody m_Rigidbody;
         private const float k_ReversingThreshold = 0.01f;
 
-        public HealthBar hb;
-
         public bool Skidding { get; private set; }
         public float BrakeInput { get; private set; }
         public float CurrentSteerAngle{ get { return m_SteerAngle; }}
@@ -72,15 +70,6 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
-        }
-
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("PickUp"))
-            {
-                other.gameObject.SetActive(false);
-                hb.UpdateHealth(5);
-            }
         }
 
         private void GearChanging()

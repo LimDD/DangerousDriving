@@ -10,8 +10,14 @@ public class HealthBar : MonoBehaviour
     public int Min;
     public int Max;
     public int newhealth;
-    private int currenthealth;
-    private float percentage;
+    public static int currenthealth;
+    public static float percentage;
+
+
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);   
+    }
 
     public void UpdateHealth(int value)
     {

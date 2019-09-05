@@ -82,8 +82,12 @@
     <Compile Include="Assets\Car folder\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\Car folder\Scripts\Suspension.cs" />
     <Compile Include="Assets\Car folder\Scripts\WheelEffects.cs" />
+    <Compile Include="Assets\HealthBar\FirstAid.cs" />
+    <Compile Include="Assets\HealthBar\GameOverHealth.cs" />
     <Compile Include="Assets\HealthBar\HealthBar.cs" />
     <Compile Include="Assets\HealthBar\Rotator.cs" />
+    <Compile Include="Assets\HealthBar\ToMainMenu.cs" />
+    <Compile Include="Assets\HealthBar\Trigger1.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
