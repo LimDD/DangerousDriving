@@ -4845,5 +4845,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f1b710ce60fbc4aa14595432943ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
-  endOfAsteroid: {fileID: 0}
+  explosion: {fileID: 100000, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
+  endOfAsteroid: {fileID: 4261693360867195957}
