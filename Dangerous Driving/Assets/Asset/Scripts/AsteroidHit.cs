@@ -5,21 +5,23 @@ using UnityEngine;
 public class AsteroidHit : MonoBehaviour
 {
     private Rigidbody rb;
+    public GameObject explosion;
+    public Transform endOfAsteroid;
+    private GameObject clone;
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
-    }
-    void Update()
-    {
-      
+        if (rb.transform.position.x <= 1)
+        {
+            endOfAsteroid.position = rb.transform.position;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-        /* if (other.gameObject.CompareTag("Track"))
-         {
-             this.gameObject.SetActive(false);
-         }
-         */
+        clone = Instantiate(this.explosion, endOfAsteroid.position, Quaternion.identity);
+
         Destroy(this.gameObject);
+
+        if (clone) Destroy(clone, 1f);
     }
 }
