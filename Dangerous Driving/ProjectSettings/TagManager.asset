@@ -8,6 +8,9 @@ TagManager:
   - Asteroid
   - PickUp
   - Cube
+  - Fire
+  - StartFinish
+  - Trigger1
   layers:
   - Default
   - TransparentFX
