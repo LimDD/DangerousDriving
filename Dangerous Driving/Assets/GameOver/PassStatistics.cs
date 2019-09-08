@@ -13,9 +13,15 @@ public class PassStatistics : MonoBehaviour
 
     // Start is called before the first frame update
 
+    private void Start()
+    {
+        
+    }
+
+
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        Object.DontDestroyOnLoad(this.gameObject);
     }
 
     public void setstatistics(int healthvalue, int lapvalue, string timevalue)

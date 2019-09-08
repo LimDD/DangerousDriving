@@ -15,15 +15,22 @@ public class GameOverText : MonoBehaviour
     public string time;
 
     public PassStatistics ps;
+    public GameObject go;    
+    public PassStatistics somescript;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = ps.gethealth;
-        lap = ps.getlap;
-        time = ps.gettime;
+        go = GameObject.Find("GameObject");
+        somescript = (PassStatistics)go.GetComponent(typeof(PassStatistics));
 
-        Health.text = "Remaining health: " + health.ToString() + "%";
+        health = somescript.gethealth;
+        lap = somescript.getlap;
+        time = somescript.gettime;
+        
+        Debug.Log(time.ToString());
+
+        Health.text = "Health: " + health.ToString() + "%";
         Lap.text = "LAP: " + lap + "/1";
         Time.text = time;
     }

@@ -31,7 +31,7 @@ public class StartFinish : MonoBehaviour
         {
             if (trigger1 == true) 
             {
-                stats.setgamestatus(false);
+                stats.setgamestatus();
             }
         }
     }

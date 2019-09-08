@@ -9,7 +9,6 @@ public class Statistics : MonoBehaviour
     public int currenthealth;
     public string currenttime;
     public int currentlap;
-    public bool gamestatus;
 
     public LapTimer lt;
     public LapNumber ln;
@@ -24,10 +23,15 @@ public class Statistics : MonoBehaviour
         ln.SetLapNumber(currentlap); //set currentlap to 1
     }
 
-    public void setgamestatus(bool value)
+    public void setgamestatus()
     {
-        gamestatus = value;
-    }
+         setcurrenthealth(hb.CurrentValue); //get current health
+         setcurrenttime(lt.getcurrenttime); //get current time
+         setcurrentlap(ln.CurrentLapNumber); //get current lap
+         ps.setstatistics(currenthealth, currentlap, currenttime); //pass data to script
+
+         SceneManager.LoadScene(2); //index2 = 'GameOver' scene
+        }
 
     public void setcurrenthealth(int value)
     {
@@ -59,31 +63,17 @@ public class Statistics : MonoBehaviour
         get { return currentlap; }
     }
 
-    public bool getgamestatus
-    {
-        get { return gamestatus; }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         setcurrentlap(0);
         setcurrenttime("00 : 00: 00");
         setcurrenthealth(50);
-        gamestatus = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gamestatus == false) //game status false means game over
-        {
-            setcurrenthealth(hb.CurrentValue); //get current health
-            setcurrenttime(lt.getcurrenttime); //get current time
-            setcurrentlap(ln.CurrentLapNumber); //get current lap
-            ps.setstatistics(currenthealth, currentlap, currenttime); //pass data to script
 
-            SceneManager.LoadScene(2); //index2 = 'GameOver' scene
-        }
     }
 }
