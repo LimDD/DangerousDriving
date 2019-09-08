@@ -5096,7 +5096,6 @@ MonoBehaviour:
   currenthealth: 0
   currenttime: 
   currentlap: 0
-  gamestatus: 0
   lt: {fileID: 1691082887}
   ln: {fileID: 2126932634}
   hb: {fileID: 2128263228}
@@ -49343,7 +49342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14cb2d63bc01f9348ac3391afb9d0b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hb: {fileID: 0}
+  hb: {fileID: 2128263228}
 --- !u!1 &856891990
 GameObject:
   m_ObjectHideFlags: 0
