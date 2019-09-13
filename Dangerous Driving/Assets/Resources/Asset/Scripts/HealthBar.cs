@@ -10,8 +10,8 @@ public class HealthBar : MonoBehaviour
     public int Min;
     public int Max;
     public int newhealth;
-    public static int currenthealth;
-    public static float percentage;
+    public int currenthealth;
+    public float percentage;
 
     public void UpdateHealth(int value)
     {
