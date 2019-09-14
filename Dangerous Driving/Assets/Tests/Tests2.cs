@@ -26,15 +26,20 @@ namespace Tests
 
             //instantiate car object
             GameObject car = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Car folder/Prefabs/Car"));
+
+            //reference LapTimer script
             LapTimer ltscript = car.GetComponent<LapTimer>();
 
+            //check if game has started
             gamestarted = ltscript.getstartflag;
 
             yield return null;
-            if (gamestarted == false)
+
+            //game started == false → game not started
+            if (gamestarted == false) 
             {
-                string timevalue = ltscript.getcurrenttime;
-                Assert.IsNull(timevalue);
+                string timevalue = ltscript.getcurrenttime; //game not started → timevalue of timer = null
+                Assert.IsNull(timevalue); //verify timevalue is null
             }
         }
     }
