@@ -13,6 +13,7 @@ public class FirstAid : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             hb.UpdateHealth(5);
+            print("Triggered");
         }
     }
 
