@@ -7,6 +7,6 @@ public class ShockwaveCollider : MonoBehaviour
     public HealthBar hb;
     void OnParticleCollision(GameObject other)
     {
-        hb.UpdateHealth(-10);
+        hb.UpdateHealth(-1);
     }
 }

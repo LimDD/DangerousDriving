@@ -8,6 +8,7 @@ namespace Tests
 {
     public class Tests2
     {
+        public bool gamestarted;
         // A Test behaves as an ordinary method
         [Test]
         public void Tests2SimplePasses()
@@ -20,24 +21,21 @@ namespace Tests
         [UnityTest]
         public IEnumerator Tests2WithEnumeratorPasses()
         {
+            //instantiate laptimber object
+            GameObject laptimer = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Prefabs/LapTimer"));
+
+            //instantiate car object
             GameObject car = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Car folder/Prefabs/Car"));
-            GameObject laptimer = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Assets/Resources/Asset/Prefabs/LapTimer.prefab"));
+            LapTimer ltscript = car.GetComponent<LapTimer>();
 
-            //LapTimer ltscript = car.GetComponent<LapTimer>();
-
-           // bool gamestarted = ltscript.getstartflag;
+            gamestarted = ltscript.getstartflag;
 
             yield return null;
-           // if (gamestarted == false)
-            //{
-                //string timevalue = ltscript.getcurrenttime;
-                //Assert.IsNull(timevalue);
-            //}
-
-            bool x = false;
-
-           Assert.IsFalse(x);
-
+            if (gamestarted == false)
+            {
+                string timevalue = ltscript.getcurrenttime;
+                Assert.IsNull(timevalue);
+            }
         }
     }
 }

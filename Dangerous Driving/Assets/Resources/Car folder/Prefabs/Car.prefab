@@ -5308,6 +5308,7 @@ GameObject:
   - component: {fileID: 856887887}
   - component: {fileID: 856887881}
   - component: {fileID: 856887888}
+  - component: {fileID: 2576191883672224312}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -5505,6 +5506,7 @@ MonoBehaviour:
   trigger1: 0
   finishline: 0
   stats: {fileID: 0}
+  lt: {fileID: 0}
 --- !u!114 &856887888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5518,6 +5520,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hb: {fileID: 0}
+--- !u!114 &2576191883672224312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5594611417361512144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c088ef4657640bb4f8b2204362fc27b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LapTimerText: {fileID: 0}
+  startTimer: 0
+  time: 0
+  timestring: 
 --- !u!1 &5594611417361512146
 GameObject:
   m_ObjectHideFlags: 0

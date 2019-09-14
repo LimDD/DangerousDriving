@@ -19,6 +19,11 @@ public class HealthBar : MonoBehaviour
         SetHealth(newhealth);
     }
 
+    public void sethealthfloat(float value)
+    {
+
+    }
+
     public void SetHealth(int health) //define the current health
     {
         if(health != currenthealth)
