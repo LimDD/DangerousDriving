@@ -22913,10 +22913,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
-      propertyPath: m_TagString
-      value: Shockwave
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -22928,6 +22924,10 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
+      propertyPath: m_TagString
+      value: Shockwave
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
       propertyPath: CollisionModule.enabled
@@ -49507,22 +49507,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5594611416387266609}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &856887881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856887880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5e7fe43f77219f47bc67e4a9a412f96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startline: 0
-  trigger1: 0
-  finishline: 0
-  stats: {fileID: 91903153}
 --- !u!212 &856887887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49572,19 +49556,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &856887888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856887880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14cb2d63bc01f9348ac3391afb9d0b75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hb: {fileID: 2128263228}
 --- !u!114 &856887890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119609,6 +119580,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 755162645, guid: b39a8b74f44847346b2e8dbddd819698, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 856887881, guid: b39a8b74f44847346b2e8dbddd819698, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 91903153}
+    - target: {fileID: 856887888, guid: b39a8b74f44847346b2e8dbddd819698, type: 3}
+      propertyPath: hb
+      value: 
+      objectReference: {fileID: 2128263228}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b39a8b74f44847346b2e8dbddd819698, type: 3}
 --- !u!1001 &7063046035548247284
