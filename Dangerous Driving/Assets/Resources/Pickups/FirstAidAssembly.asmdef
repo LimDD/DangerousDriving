@@ -1,0 +1,14 @@
+{
+    "name": "FirstAidAssembly",
+    "references": [
+        "GUID:c8541ce8addcdc043bde557937ff6e6f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": []
+}
