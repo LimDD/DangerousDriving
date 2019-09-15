@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Track
   - Asteroid
+  - Spike
   layers:
   - Default
   - TransparentFX
