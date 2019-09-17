@@ -11,6 +11,8 @@ TagManager:
   - Fire
   - StartFinish
   - Trigger1
+  - Shockwave
+  - LapTimer
   layers:
   - Default
   - TransparentFX
@@ -21,6 +23,7 @@ TagManager:
   - 
   - 
   - 
+  - Collision
   - 
   - 
   - 

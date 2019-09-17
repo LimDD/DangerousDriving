@@ -8,6 +8,8 @@ public class StartFinish : MonoBehaviour
     public bool trigger1;
     public bool finishline;
     public Statistics stats;
+    public LapTimer lt;
+
 
     //public Timer t;
     void OnTriggerEnter(Collider other)
@@ -18,6 +20,9 @@ public class StartFinish : MonoBehaviour
             {
                 startline = true;
                 stats.startgame(); //starts lap number, timer
+
+                lt.setstartflag();
+
             }
 
         }
@@ -25,12 +30,18 @@ public class StartFinish : MonoBehaviour
         if (other.CompareTag("Trigger1"))
         {
             trigger1 = true; //trigger1 true
+
+            lt.settrigger1flag();
+
         }
 
         if (other.CompareTag("StartFinish"))
         {
             if (trigger1 == true) 
             {
+
+                lt.setfinishflag();
+
                 stats.setgamestatus();
             }
         }
