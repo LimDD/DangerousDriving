@@ -12,7 +12,7 @@ public class FirstAid : MonoBehaviour
         if (other.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-            hb.UpdateHealth(5);
+            hb.UpdateHealth(10.0f);
         }
     }
 

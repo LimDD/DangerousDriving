@@ -33,7 +33,7 @@ namespace Tests
             firstAid.hb = bar;
 
             // Set the initial health
-            initialHealth = bar.currenthealth;
+            initialHealth =(int)bar.currenthealth;
             Debug.Log(bar.currenthealth);
             car.transform.position = healthPackObject.transform.position;
             //healthPack.transform.position = new Vector3(50, 50, 50);
