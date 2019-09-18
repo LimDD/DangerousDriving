@@ -9,17 +9,22 @@ public class HealthBar : MonoBehaviour
     public Text TxtHealth;
     public int Min;
     public int Max;
-    public int newhealth;
-    public int currenthealth;
+    public float newhealth;
+    public float currenthealth;
     public float percentage;
 
-    public void UpdateHealth(int value)
+    public void UpdateHealth(float value)
     {
         newhealth = currenthealth + value;
         SetHealth(newhealth);
     }
 
-    public void SetHealth(int health) //define the current health
+    public void sethealthfloat(float value)
+    {
+
+    }
+
+    public void SetHealth(float health) //define the current health
     {
         if(health != currenthealth)
         {
@@ -45,7 +50,7 @@ public class HealthBar : MonoBehaviour
         get { return percentage; }
     }
 
-    public int CurrentValue
+    public float CurrentValue
     {
         get { return currenthealth; }
     }
@@ -53,7 +58,7 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetHealth(50);
+        SetHealth(100);
     }
 
     // Update is called once per frame
