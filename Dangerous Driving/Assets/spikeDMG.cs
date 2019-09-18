@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spikeDMG : MonoBehaviour
+public class spikeDmg : MonoBehaviour
 {
-    public GameObject car;
+    public HealthBar health1;
+    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    
+    // Update is called once per frame
     void Update()
     {
         
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Spike")){
+            health1.currenthealth -= 5;
+        }
     }
 }

@@ -4273,6 +4273,9 @@ MonoBehaviour:
   TxtHealth: {fileID: 1169704014}
   Min: 0
   Max: 100
+  newhealth: 0
+  currenthealth: 0
+  percentage: 0
 --- !u!1 &74780643
 GameObject:
   m_ObjectHideFlags: 0
@@ -62675,6 +62678,7 @@ GameObject:
   - component: {fileID: 1098216032}
   - component: {fileID: 1098216036}
   - component: {fileID: 1098216037}
+  - component: {fileID: 1098216038}
   m_Layer: 0
   m_Name: CameraStabilizer
   m_TagString: Untagged
@@ -62710,9 +62714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Car: {fileID: 258537608}
-  CarX: 0
-  CarY: 0
-  CarZ: 0
 --- !u!65 &1098216033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62801,6 +62802,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad23bbe1fde0eef4dacf7b3532b7f23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1098216038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098216030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35b751efb5aedd4ea8193f99fc9e6c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health1: {fileID: 8070437340217102347, guid: 742dbc456f5b2d74d96f041eb6231d78, type: 3}
 --- !u!1 &1098478511
 GameObject:
   m_ObjectHideFlags: 0
@@ -66597,7 +66611,7 @@ PrefabInstance:
     - target: {fileID: 8640622342257015020, guid: 6961f1d2655ba1c43835d70000de70fe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 103.97351
+      value: 103.29
       objectReference: {fileID: 0}
     - target: {fileID: 8640622342257015020, guid: 6961f1d2655ba1c43835d70000de70fe,
         type: 3}
