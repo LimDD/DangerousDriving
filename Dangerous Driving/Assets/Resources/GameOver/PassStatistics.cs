@@ -24,9 +24,9 @@ public class PassStatistics : MonoBehaviour
         Object.DontDestroyOnLoad(this.gameObject);
     }
 
-    public void setstatistics(int healthvalue, int lapvalue, string timevalue)
+    public void setstatistics(float healthvalue, int lapvalue, string timevalue)
     {
-        health = healthvalue;
+        health = (int)healthvalue;
         lap = lapvalue;
         time = timevalue;
     }

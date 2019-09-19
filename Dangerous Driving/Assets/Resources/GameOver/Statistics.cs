@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Statistics : MonoBehaviour
 {
-    public int currenthealth;
+    public float currenthealth;
     public string currenttime;
     public int currentlap;
 
@@ -33,7 +33,7 @@ public class Statistics : MonoBehaviour
          SceneManager.LoadScene(2); //index2 = 'GameOver' scene
         }
 
-    public void setcurrenthealth(int value)
+    public void setcurrenthealth(float value)
     {
         currenthealth = value;
     }
@@ -48,7 +48,7 @@ public class Statistics : MonoBehaviour
         currentlap = value;
     }
 
-    public int getcurrenthealth
+    public float getcurrenthealth
     {
         get { return currenthealth; }
     }
