@@ -19,7 +19,7 @@ public class spikeDmg : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Spike")){
-            health1.currenthealth -= 5;
+            health1.UpdateHealth(-3.0f);
         }
     }
 }
