@@ -24,7 +24,9 @@ public class HealthBar : MonoBehaviour
 
     }
 
+
     public void SetHealth(float health) //define the current health
+
     {
         if(health != currenthealth)
         {

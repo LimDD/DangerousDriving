@@ -37,12 +37,14 @@ public class LapTimer : MonoBehaviour
     public void setfinishflag()
     {
         finishflag = true;
+
     }
 
     public void SetStartTimerOn()
     {
         startTimer = 1.0f;
     }
+
 
     public bool getstartflag
     {
@@ -58,6 +60,7 @@ public class LapTimer : MonoBehaviour
     {
         get { return finishflag; }
     }
+
 
     public string getcurrenttime
     {
