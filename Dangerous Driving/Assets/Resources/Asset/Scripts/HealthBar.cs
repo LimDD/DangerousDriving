@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-
     public Image ImgHealthBar;
     public Text TxtHealth;
     public int Min;
@@ -14,7 +13,7 @@ public class HealthBar : MonoBehaviour
     public float currenthealth;
     public float percentage;
     public GameObject go;
-    public bool healthLess0;
+    public StartFinish sf;
 
     public void UpdateHealth(float value)
     {
@@ -46,7 +45,10 @@ public class HealthBar : MonoBehaviour
 
             if (health < 0)
             {
-                healthLess0 = true;
+                go = GameObject.Find("Player");
+                sf = (StartFinish)go.GetComponent<StartFinish>();
+                sf.noHealthRemaining();
+  
             } else
             {
                 TxtHealth.text = string.Format("{0} %", Mathf.RoundToInt(percentage * 100));
@@ -69,7 +71,6 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         SetHealth(100);
-        healthLess0 = false;
     }
 
     // Update is called once per frame

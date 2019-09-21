@@ -48,11 +48,11 @@ public class StartFinish : MonoBehaviour
         }
     }
 
-        public void noHealthRemaining()
-        {
-            lt.setfinishflag();
-            stats.setgamestatus();
-        }
+    public void noHealthRemaining()
+    {
+        lt.setfinishflag();
+        stats.setgamestatus();
+    }
 
 
     // Start is called before the first frame update
@@ -66,9 +66,6 @@ public class StartFinish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hb.healthLess0 == true)
-        {
-            noHealthRemaining();
-        }
+
     }
 }
