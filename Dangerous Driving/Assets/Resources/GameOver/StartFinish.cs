@@ -9,6 +9,7 @@ public class StartFinish : MonoBehaviour
     public bool finishline;
     public Statistics stats;
     public LapTimer lt;
+    public HealthBar hb;
 
 
     //public Timer t;
@@ -47,6 +48,12 @@ public class StartFinish : MonoBehaviour
         }
     }
 
+        public void noHealthRemaining()
+        {
+            lt.setfinishflag();
+            stats.setgamestatus();
+        }
+
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +66,9 @@ public class StartFinish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (hb.healthLess0 == true)
+        {
+            noHealthRemaining();
+        }
     }
 }
