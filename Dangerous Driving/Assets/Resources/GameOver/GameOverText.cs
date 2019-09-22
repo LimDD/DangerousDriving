@@ -30,8 +30,8 @@ public class GameOverText : MonoBehaviour
         health = somescript.gethealth;
         lap = somescript.getlap;
         time = somescript.gettime;
-
-        calculateScore();
+        
+        Debug.Log(time.ToString());
 
         Health.text = "Health: " + health.ToString() + "%";
         Lap.text = "LAP: " + lap + "/1";
@@ -41,45 +41,30 @@ public class GameOverText : MonoBehaviour
 
     public void calculateScore()
     {
-        char minutesTens = time[0];
-        int mT = (int)minutesTens;
-        mT += -48;
+        int minutesTens = time[7];
+        int minutesOnes = time[8];
+        int secondsTens = time[12];
+        int secondsOnes = time[11];
 
-        char minutesOnes = time[1];
-        int mO = (int)minutesOnes;
-        mO += -48;
-
-        char secondsTens = time[5];
-        int sT = (int)secondsTens;
-        sT += -48;
-
-        char secondsOnes = time[6];
-        int sO = (int)secondsOnes;
-        sO += -48;
-
-        if (mT != 0)
+        if (minutesTens != 0)
         {
-            seconds += mT * 600;
+            seconds += minutesTens * 600;
         }
 
-        if (mO != 0)
+        if (minutesOnes != 0)
         {
-            seconds += mO * 60;
+            seconds += minutesOnes * 60;
         }
 
-        if (sT != 0)
+        if (secondsTens != 0)
         {
-            seconds += sT * 10;
+            seconds += secondsTens * 10;
         }
 
-        seconds += sO;
+        seconds += secondsOnes;
 
-        score = (health*2) - seconds;
-
-        if (score < 0)
-        {
-            score = 0;  //minimum score 0
-        }
+        int remainingHealth = 100 - health;
+        score = (remainingHealth * 2) - seconds;
     }
 
     // Update is called once per frame
