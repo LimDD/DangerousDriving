@@ -12,16 +12,12 @@ public class HealthBar : MonoBehaviour
     public float newhealth;
     public float currenthealth;
     public float percentage;
+    public bool healthRemaining;
 
     public void UpdateHealth(float value)
     {
         newhealth = currenthealth + value;
         SetHealth(newhealth);
-    }
-
-    public void sethealthfloat(float value)
-    {
-
     }
 
 
@@ -34,17 +30,32 @@ public class HealthBar : MonoBehaviour
             {
                 currenthealth = 0;
                 percentage = 0;
-            }
-            else
+            } else
             {
                 currenthealth = health;
                 percentage = (float)currenthealth / (float)(Max - Min);
             }
 
-            TxtHealth.text = string.Format("{0} %", Mathf.RoundToInt(percentage * 100));
+            if (currenthealth > 100)
+            {
+                currenthealth = 100;
+                percentage = 1;
+            }
 
-            ImgHealthBar.fillAmount = (percentage);
+            if (health < 0)
+            {
+                healthRemaining = false;
+            } else
+            {
+                TxtHealth.text = string.Format("{0} %", Mathf.RoundToInt(percentage * 100));
+                ImgHealthBar.fillAmount = (percentage);
+            }
         }
+    }
+
+    public bool getHealthRemaining
+    {
+        get { return healthRemaining; }
     }
 
     public float CurrentPercent
@@ -60,6 +71,7 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        healthRemaining = true;
         SetHealth(100);
     }
 
