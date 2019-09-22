@@ -12,8 +12,7 @@ public class HealthBar : MonoBehaviour
     public float newhealth;
     public float currenthealth;
     public float percentage;
-    public GameObject go;
-    public StartFinish sf;
+    public bool healthRemaining;
 
     public void UpdateHealth(float value)
     {
@@ -45,16 +44,18 @@ public class HealthBar : MonoBehaviour
 
             if (health < 0)
             {
-                go = GameObject.Find("Player");
-                sf = (StartFinish)go.GetComponent<StartFinish>();
-                sf.noHealthRemaining();
-  
+                healthRemaining = false;
             } else
             {
                 TxtHealth.text = string.Format("{0} %", Mathf.RoundToInt(percentage * 100));
                 ImgHealthBar.fillAmount = (percentage);
             }
         }
+    }
+
+    public bool getHealthRemaining
+    {
+        get { return healthRemaining; }
     }
 
     public float CurrentPercent
@@ -70,6 +71,7 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        healthRemaining = true;
         SetHealth(100);
     }
 
