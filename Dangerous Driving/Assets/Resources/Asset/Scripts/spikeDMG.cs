@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class spikeDMG : MonoBehaviour
 {
-    private HealthBar health1;
+    public HealthBar health1;
     public GameObject car;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class spikeDMG : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == ("Spike")){
+        if (other.gameObject.tag == ("Player")){
             health1.UpdateHealth(-3.0f);
         }
     }
