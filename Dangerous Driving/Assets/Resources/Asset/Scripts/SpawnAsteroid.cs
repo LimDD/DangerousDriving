@@ -6,21 +6,20 @@ public class SpawnAsteroid : MonoBehaviour
 {
     public GameObject asteroidPrefab;
     public GameObject carCordinate;
-    public float spawnTimer = 3f;
+    public float spawnTimer = 0.7f;
     public Vector3 positionOfCar;
     void Start()
     {
         StartCoroutine(asteroidLoop());
-
+        
     }
     void Update()
     {
         this.positionOfCar = carCordinate.transform.position;
-        var player = GameObject.Find("Car");
     }
     private void spawner()
     {
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 4; i++)
         {
             GameObject aster = Instantiate(asteroidPrefab) as GameObject;
             aster.transform.position = new Vector3(this.positionOfCar.x + Random.Range(-50, 50), 60, this.positionOfCar.z + Random.Range(-50, 50));
