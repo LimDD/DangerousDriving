@@ -66,7 +66,7 @@ public class StartFinish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hb.healthRemaining == false)
+        if (hb.getHealthRemaining == false)
         {
             noHealthRemaining();
         }
