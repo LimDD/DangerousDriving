@@ -19,7 +19,7 @@ namespace Tests
         {
             GameObject healthPackObject = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Pickups/FirstAid"));
             GameObject car = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Car folder/Prefabs/Car"));
-            GameObject healthBar = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("export/HealthBar"));
+            GameObject healthBar = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Scripts/HealthBar"));
             FirstAid firstAid;
             int initialHealth;
 
