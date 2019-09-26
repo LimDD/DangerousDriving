@@ -14,9 +14,13 @@ public class SpikeDMG : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)  
     {
-        if(other.CompareTag("Spike"))
+        if(other.CompareTag("Spike")) //tag on the object you collide with
+        {
+            health.UpdateHealth(-10.0f);
+        }
+        if (other.CompareTag("AICar")) //tag on the object you collide with
         {
             health.UpdateHealth(-10.0f);
         }
