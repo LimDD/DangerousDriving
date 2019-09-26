@@ -6,7 +6,8 @@
         "GameAssembly",
         "FirstAidAssembly",
         "laptimerassembly",
-        "prefabsassembly"
+        "prefabsassembly",
+        "ShockwaveCollider"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
