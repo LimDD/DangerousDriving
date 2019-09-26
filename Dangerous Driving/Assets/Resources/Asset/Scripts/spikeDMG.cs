@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpikeDMG : MonoBehaviour
 {
     public HealthBar health;
-    
+
     void Start()
     {
 
@@ -15,7 +15,7 @@ public class SpikeDMG : MonoBehaviour
     {
 
     }
-    IEnumerator OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Spike")) //tag on the object you collide with
         {
@@ -24,8 +24,6 @@ public class SpikeDMG : MonoBehaviour
         if (other.CompareTag("AICar")) //tag on the object you collide with
         {
             health.UpdateHealth(-10.0f);
-
-            yield return new WaitForSeconds(3);
         }
     }
 }
