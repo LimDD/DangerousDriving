@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpikeDMG : MonoBehaviour
 {
     public HealthBar health;
-    public CarController speed;
+
     void Start()
     {
 
