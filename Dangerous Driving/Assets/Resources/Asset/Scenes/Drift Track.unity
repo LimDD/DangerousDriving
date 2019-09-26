@@ -17032,6 +17032,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289035559}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &291439505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4627037149999913748, guid: 266bfa7e23d7458438447efac945c854,
+    type: 3}
+  m_PrefabInstance: {fileID: 4627037148885236781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &291439509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291439505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.015747, y: 1.0077744, z: 7.342987}
+  m_Center: {x: 0.16868591, y: 0.8610754, z: -0.6950836}
 --- !u!1 &292908408
 GameObject:
   m_ObjectHideFlags: 0
@@ -121506,6 +121525,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114117186}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2115543457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4627037149474304532, guid: 266bfa7e23d7458438447efac945c854,
+    type: 3}
+  m_PrefabInstance: {fileID: 4627037148885236781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2115543464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115543457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.015747, y: 1.0077744, z: 7.342987}
+  m_Center: {x: 0.16868591, y: 0.8610754, z: -0.6950836}
 --- !u!1 &2115586789
 GameObject:
   m_ObjectHideFlags: 0
@@ -123656,6 +123694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ai Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4627037149474304532, guid: 266bfa7e23d7458438447efac945c854,
+        type: 3}
+      propertyPath: m_TagString
+      value: AICar
+      objectReference: {fileID: 0}
     - target: {fileID: 4627037149474304530, guid: 266bfa7e23d7458438447efac945c854,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -123716,6 +123759,16 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1038370375}
+    - target: {fileID: 4627037149474304528, guid: 266bfa7e23d7458438447efac945c854,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627037149474304528, guid: 266bfa7e23d7458438447efac945c854,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 266bfa7e23d7458438447efac945c854, type: 3}
 --- !u!1001 &5594611416387266609
@@ -123809,6 +123862,16 @@ PrefabInstance:
       propertyPath: hb
       value: 
       objectReference: {fileID: 2128263228}
+    - target: {fileID: 5594611417361512147, guid: b39a8b74f44847346b2e8dbddd819698,
+        type: 3}
+      propertyPath: m_FullTorqueOverAllWheels
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594611417361512147, guid: b39a8b74f44847346b2e8dbddd819698,
+        type: 3}
+      propertyPath: m_SteerHelper
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b39a8b74f44847346b2e8dbddd819698, type: 3}
 --- !u!4 &5594611416387266610 stripped

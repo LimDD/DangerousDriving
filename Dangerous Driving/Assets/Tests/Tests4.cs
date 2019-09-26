@@ -10,30 +10,29 @@ namespace Tests
     public class Tests4
     {
         [UnityTest]
-        public IEnumerator LapTimerStarts()
+        public IEnumerator SpikeDMGTest()
         {
+            GameObject car = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Car folder/Prefabs/Car"));
+            GameObject healthBarGameObject = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Scripts/HealthBar"));
+            GameObject spikeStripGameObject = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Prefabs/SpikeStrip 1"));
 
+            HealthBar healthBar = healthBarGameObject.GetComponent<HealthBar>();
 
-            
+            SpikeDMG spike = car.GetComponent<SpikeDMG>();
+            spike.health = healthBar;
 
+            float initialHealth = 100.0f;
 
-            //instantiate laptimber object
-            GameObject laptimer = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Prefabs/LapTimer"));
-
-            //reference LapTimer script
-            LapTimer ltscript = laptimer.GetComponent<LapTimer>();
-
-            //start lap timer
-            ltscript.startTimer = 1;
+            car.transform.position = new Vector3(0, 0, 0);
+            spikeStripGameObject.transform.position = new Vector3(0, 0, 0);
 
             //wait 3 seconds
             yield return new WaitForSeconds(3f);
-
-            //get currentime
-            string timevalue = ltscript.getcurrenttime;
+            
+            Debug.Log("Car current health: " + healthBar.currenthealth);
 
             //check currenttime not null
-            Assert.IsNotNull(timevalue);
+            Assert.Less(healthBar.currenthealth, initialHealth);
         }
 
     }
