@@ -8,19 +8,23 @@ public class SpikeDMG : MonoBehaviour
     public CarController speed;
     void Start()
     {
-        
+
     }
-   
+
     void Update()
     {
-        
+
     }
     IEnumerator OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Spike"))
+        if(other.CompareTag("Spike")) //tag on the object you collide with
         {
             health.UpdateHealth(-10.0f);
-            
+        }
+        if (other.CompareTag("AICar")) //tag on the object you collide with
+        {
+            health.UpdateHealth(-10.0f);
+
             yield return new WaitForSeconds(3);
         }
     }
