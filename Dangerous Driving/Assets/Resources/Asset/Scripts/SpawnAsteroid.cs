@@ -19,7 +19,7 @@ public class SpawnAsteroid : MonoBehaviour
     }
     private void spawner()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 3; i++)
         {
             GameObject aster = Instantiate(asteroidPrefab) as GameObject;
             aster.transform.position = new Vector3(this.positionOfCar.x + Random.Range(-50, 50), 60, this.positionOfCar.z + Random.Range(-50, 50));

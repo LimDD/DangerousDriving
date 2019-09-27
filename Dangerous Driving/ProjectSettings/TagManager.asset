@@ -13,6 +13,8 @@ TagManager:
   - Trigger1
   - Shockwave
   - LapTimer
+  - Spike
+  - AICar
   layers:
   - Default
   - TransparentFX
@@ -24,7 +26,6 @@ TagManager:
   - 
   - 
   - Collision
-  - 
   - 
   - 
   - 

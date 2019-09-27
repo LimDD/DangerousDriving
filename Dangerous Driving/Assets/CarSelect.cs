@@ -10,9 +10,15 @@ public class CarSelect : MonoBehaviour
     // Start is called before the first frame update
     private List<GameObject> models;
     private int selectionIndex = 0;
+    private int colourIndex = 0;
+    public Material[] BodyColorMat;
+    Material CurrMat;
+    Renderer renderer;
     void Start()
     {
+        renderer = this.GetComponent<Renderer>();
         selectionIndex = PlayerPrefs.GetInt("CarSelected");
+        colourIndex = PlayerPrefs.GetInt("ColourSelected");
         models = new List<GameObject>();
         foreach(Transform t in transform)
         {
@@ -43,6 +49,7 @@ public class CarSelect : MonoBehaviour
     
     public void ConfirmCar()
     {
+        PlayerPrefs.SetInt("ColourSelected", colourIndex);
         PlayerPrefs.SetInt("CarSelected", selectionIndex);
         SceneManager.LoadScene(1);
     }
@@ -68,4 +75,30 @@ public class CarSelect : MonoBehaviour
         }
         models[selectionIndex].SetActive(true);
     }
+    public void BlueColor()
+    {
+        colourIndex = 0;
+        renderer.material = BodyColorMat[colourIndex];
+        CurrMat = renderer.material;
+        
+    }
+
+
+    public void GreenColor()
+    {
+        colourIndex = 1;
+        renderer.material = BodyColorMat[colourIndex];
+        CurrMat = renderer.material;
+       
+    }
+
+
+    public void redColor()
+    {
+        colourIndex = 2;
+        renderer.material = BodyColorMat[colourIndex];
+        CurrMat = renderer.material;
+        
+    }
+
 }
