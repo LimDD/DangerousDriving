@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spikeDMG : MonoBehaviour
+public class DifficultyChoiceScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    bool isSelected = false;
+    
     void Start()
     {
         
