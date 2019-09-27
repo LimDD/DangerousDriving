@@ -42,7 +42,7 @@ public class HealthBar : MonoBehaviour
                 percentage = 1;
             }
 
-            if (health < 0)
+            if (health <= 0)
             {
                 healthRemaining = false;
             } else
