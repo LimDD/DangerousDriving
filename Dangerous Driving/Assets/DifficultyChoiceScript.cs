@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DifficultyChoiceScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    bool isSelected = false;
+    
     void Start()
     {
         
