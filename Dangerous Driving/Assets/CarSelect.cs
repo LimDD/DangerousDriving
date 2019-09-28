@@ -18,7 +18,7 @@ public class CarSelect : MonoBehaviour
     {
         renderer = this.GetComponent<Renderer>();
         selectionIndex = PlayerPrefs.GetInt("CarSelected");
-        colourIndex = PlayerPrefs.GetInt("ColourSelected");
+        //colourIndex = PlayerPrefs.GetInt("ColourSelected");
         models = new List<GameObject>();
         foreach(Transform t in transform)
         {
@@ -49,7 +49,7 @@ public class CarSelect : MonoBehaviour
     
     public void ConfirmCar()
     {
-        PlayerPrefs.SetInt("ColourSelected", colourIndex);
+        //PlayerPrefs.SetInt("ColourSelected", colourIndex);
         PlayerPrefs.SetInt("CarSelected", selectionIndex);
         SceneManager.LoadScene(1);
     }
@@ -69,7 +69,7 @@ public class CarSelect : MonoBehaviour
     {
         models[selectionIndex].SetActive(false);
         selectionIndex = selectionIndex + 1;
-        if (selectionIndex == 5)
+        if (selectionIndex > 4)
         {
             selectionIndex = 0;
         }
