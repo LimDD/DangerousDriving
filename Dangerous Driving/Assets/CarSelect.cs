@@ -25,7 +25,7 @@ public class CarSelect : MonoBehaviour
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
-        models[selectionIndex].SetActive(true);
+      // models[selectionIndex].SetActive(true);
     }
 
     private void Update()
@@ -78,7 +78,7 @@ public class CarSelect : MonoBehaviour
     public void BlueColor()
     {
         colourIndex = 0;
-        renderer.material = BodyColorMat[colourIndex];
+        renderer.material = BodyColorMat[0];
         CurrMat = renderer.material;
         
     }
@@ -87,7 +87,7 @@ public class CarSelect : MonoBehaviour
     public void GreenColor()
     {
         colourIndex = 1;
-        renderer.material = BodyColorMat[colourIndex];
+        renderer.material = BodyColorMat[1];
         CurrMat = renderer.material;
        
     }
@@ -96,7 +96,7 @@ public class CarSelect : MonoBehaviour
     public void redColor()
     {
         colourIndex = 2;
-        renderer.material = BodyColorMat[colourIndex];
+        renderer.material = BodyColorMat[2];
         CurrMat = renderer.material;
         
     }
