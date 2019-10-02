@@ -9,7 +9,7 @@ public class CarSelect : MonoBehaviour
 {
     // Start is called before the first frame update
     private List<GameObject> models;
-    private int selectionIndex = 0;
+    public int selectionIndex = 0;
     private int colourIndex = 0;
     //public Material[] BodyColorMat;
     //Material CurrMat;
@@ -25,8 +25,12 @@ public class CarSelect : MonoBehaviour
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
-        models[selectionIndex].SetActive(true);
-        // models[selectionIndex].SetActive(true);
+
+        if (this.gameObject.tag == "CarSelection")
+        {
+            models[selectionIndex].SetActive(true);
+        }
+        
     }
 
     private void Update()

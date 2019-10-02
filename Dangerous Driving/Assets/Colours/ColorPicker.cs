@@ -6,8 +6,8 @@ public class ColorPicker : MonoBehaviour
 {
 
     public Material[] BodyColorMat;
-    Material CurrMat;
-    Renderer renderer;
+    [SerializeField] Material CurrMat;
+    [SerializeField] Renderer renderer;
 
     // Use this for initialization
     void Start()
