@@ -25,7 +25,8 @@ public class CarSelect : MonoBehaviour
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
-      // models[selectionIndex].SetActive(true);
+        models[selectionIndex].SetActive(true);
+        // models[selectionIndex].SetActive(true);
     }
 
     private void Update()
