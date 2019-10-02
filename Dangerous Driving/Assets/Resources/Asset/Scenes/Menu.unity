@@ -876,7 +876,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1102222423}
+      - m_Target: {fileID: 1102222425}
         m_MethodName: GreenColor
         m_Mode: 1
         m_Arguments:
@@ -887,7 +887,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 544113424}
+      - m_Target: {fileID: 544113426}
         m_MethodName: GreenColor
         m_Mode: 1
         m_Arguments:
@@ -898,7 +898,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1775614624}
+      - m_Target: {fileID: 1775614626}
         m_MethodName: GreenColor
         m_Mode: 1
         m_Arguments:
@@ -909,7 +909,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2096535432}
+      - m_Target: {fileID: 2096535434}
         m_MethodName: GreenColor
         m_Mode: 1
         m_Arguments:
@@ -920,7 +920,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 656624312}
+      - m_Target: {fileID: 656624314}
         m_MethodName: GreenColor
         m_Mode: 1
         m_Arguments:
@@ -1888,10 +1888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyColorMat:
-  - {fileID: 2100000, guid: 51fff36c3365ecd4e9b8d93d7330a348, type: 2}
-  - {fileID: 2100000, guid: ebb9b02114a05304c9d45ee7ff88e681, type: 2}
-  - {fileID: 2100000, guid: 96c4a65a0743ed04496bf81f8394b245, type: 2}
 --- !u!4 &506336982
 Transform:
   m_ObjectHideFlags: 0
@@ -2142,6 +2138,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &544113426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544113423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   BodyColorMat:
   - {fileID: 2100000, guid: 51fff36c3365ecd4e9b8d93d7330a348, type: 2}
   - {fileID: 2100000, guid: ebb9b02114a05304c9d45ee7ff88e681, type: 2}
@@ -2372,6 +2380,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &656624314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656624311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BodyColorMat:
@@ -4658,6 +4678,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1102222425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102222422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   BodyColorMat:
   - {fileID: 2100000, guid: 51fff36c3365ecd4e9b8d93d7330a348, type: 2}
   - {fileID: 2100000, guid: ebb9b02114a05304c9d45ee7ff88e681, type: 2}
@@ -4965,7 +4997,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1102222423}
+      - m_Target: {fileID: 1102222425}
         m_MethodName: BlueColor
         m_Mode: 1
         m_Arguments:
@@ -4976,7 +5008,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 544113424}
+      - m_Target: {fileID: 544113426}
         m_MethodName: BlueColor
         m_Mode: 1
         m_Arguments:
@@ -4987,7 +5019,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1775614624}
+      - m_Target: {fileID: 1775614626}
         m_MethodName: BlueColor
         m_Mode: 1
         m_Arguments:
@@ -4998,7 +5030,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2096535432}
+      - m_Target: {fileID: 2096535434}
         m_MethodName: BlueColor
         m_Mode: 1
         m_Arguments:
@@ -5009,7 +5041,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 656624312}
+      - m_Target: {fileID: 656624314}
         m_MethodName: BlueColor
         m_Mode: 1
         m_Arguments:
@@ -5964,7 +5996,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1102222423}
+      - m_Target: {fileID: 1102222425}
         m_MethodName: redColor
         m_Mode: 1
         m_Arguments:
@@ -5975,7 +6007,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 544113424}
+      - m_Target: {fileID: 544113426}
         m_MethodName: redColor
         m_Mode: 1
         m_Arguments:
@@ -5986,7 +6018,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1775614624}
+      - m_Target: {fileID: 1775614626}
         m_MethodName: redColor
         m_Mode: 1
         m_Arguments:
@@ -5997,7 +6029,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2096535432}
+      - m_Target: {fileID: 2096535434}
         m_MethodName: redColor
         m_Mode: 1
         m_Arguments:
@@ -6008,7 +6040,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 656624312}
+      - m_Target: {fileID: 656624314}
         m_MethodName: redColor
         m_Mode: 1
         m_Arguments:
@@ -7273,6 +7305,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1775614626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775614623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BodyColorMat:
@@ -8792,6 +8836,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2096535434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096535431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BodyColorMat:

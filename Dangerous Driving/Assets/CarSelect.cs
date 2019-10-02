@@ -11,12 +11,12 @@ public class CarSelect : MonoBehaviour
     private List<GameObject> models;
     private int selectionIndex = 0;
     private int colourIndex = 0;
-    public Material[] BodyColorMat;
-    Material CurrMat;
-    Renderer renderer;
+    //public Material[] BodyColorMat;
+    //Material CurrMat;
+    //Renderer renderer;
     void Start()
     {
-        renderer = this.GetComponent<Renderer>();
+        //renderer = this.GetComponent<Renderer>();
         selectionIndex = PlayerPrefs.GetInt("CarSelected");
         //colourIndex = PlayerPrefs.GetInt("ColourSelected");
         models = new List<GameObject>();
@@ -75,30 +75,31 @@ public class CarSelect : MonoBehaviour
         }
         models[selectionIndex].SetActive(true);
     }
-    public void BlueColor()
-    {
-        colourIndex = 0;
-        renderer.material = BodyColorMat[0];
-        CurrMat = renderer.material;
+    
+    //public void BlueColor()
+    //{
+    //    colourIndex = 0;
+    //    renderer.material = BodyColorMat[0];
+    //    CurrMat = renderer.material;
         
-    }
+    //}
 
 
-    public void GreenColor()
-    {
-        colourIndex = 1;
-        renderer.material = BodyColorMat[1];
-        CurrMat = renderer.material;
+    //public void GreenColor()
+    //{
+    //   colourIndex = 1;
+    //    renderer.material = BodyColorMat[1];
+    //    CurrMat = renderer.material;
        
-    }
+    //}
 
 
-    public void redColor()
-    {
-        colourIndex = 2;
-        renderer.material = BodyColorMat[2];
-        CurrMat = renderer.material;
+    //public void redColor()
+    //{
+    //    colourIndex = 2;
+    //    renderer.material = BodyColorMat[2];
+    //    CurrMat = renderer.material;
         
-    }
+    //}
 
 }
