@@ -9,17 +9,28 @@ public class CarSelect : MonoBehaviour
 {
     // Start is called before the first frame update
     private List<GameObject> models;
-    private int selectionIndex = 0;
+    public int selectionIndex = 0;
+    private int colourIndex = 0;
+    //public Material[] BodyColorMat;
+    //Material CurrMat;
+    //Renderer renderer;
     void Start()
     {
+        //renderer = this.GetComponent<Renderer>();
         selectionIndex = PlayerPrefs.GetInt("CarSelected");
+        //colourIndex = PlayerPrefs.GetInt("ColourSelected");
         models = new List<GameObject>();
         foreach(Transform t in transform)
         {
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
-        models[selectionIndex].SetActive(true);
+
+        if (this.gameObject.tag == "CarSelection")
+        {
+            models[selectionIndex].SetActive(true);
+        }
+        
     }
 
     private void Update()
@@ -43,6 +54,7 @@ public class CarSelect : MonoBehaviour
     
     public void ConfirmCar()
     {
+        //PlayerPrefs.SetInt("ColourSelected", colourIndex);
         PlayerPrefs.SetInt("CarSelected", selectionIndex);
         SceneManager.LoadScene(1);
     }
@@ -62,10 +74,37 @@ public class CarSelect : MonoBehaviour
     {
         models[selectionIndex].SetActive(false);
         selectionIndex = selectionIndex + 1;
-        if (selectionIndex == 5)
+        if (selectionIndex > 4)
         {
             selectionIndex = 0;
         }
         models[selectionIndex].SetActive(true);
     }
+    
+    //public void BlueColor()
+    //{
+    //    colourIndex = 0;
+    //    renderer.material = BodyColorMat[0];
+    //    CurrMat = renderer.material;
+        
+    //}
+
+
+    //public void GreenColor()
+    //{
+    //   colourIndex = 1;
+    //    renderer.material = BodyColorMat[1];
+    //    CurrMat = renderer.material;
+       
+    //}
+
+
+    //public void redColor()
+    //{
+    //    colourIndex = 2;
+    //    renderer.material = BodyColorMat[2];
+    //    CurrMat = renderer.material;
+        
+    //}
+
 }
