@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34788668, g: 0.39466095, b: 0.3678906, a: 1}
+  m_IndirectSpecularColor: {r: 0.3478659, g: 0.39462823, b: 0.3678711, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -23121,6 +23121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
       propertyPath: CollisionModule.multiplyColliderForceByParticleSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343277217665615455, guid: 15ca5b8fa431dc04291a79cadcd19874,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -107873,7 +107878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d59b2981881374ea17d45819cfdd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyColorMat: []
+  selectionIndex: 0
 --- !u!4 &1923556539
 Transform:
   m_ObjectHideFlags: 0
