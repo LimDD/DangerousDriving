@@ -32,7 +32,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_MaxHandbrakeTorque;
         [SerializeField] private float m_Downforce = 100f;
         [SerializeField] private SpeedType m_SpeedType;
-        [SerializeField] private float m_Topspeed = 200;
+        [SerializeField] public float m_Topspeed = 200;
         [SerializeField] private static int NoOfGears = 5;
         [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
@@ -44,7 +44,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private int m_GearNum;
         private float m_GearFactor;
         private float m_OldRotation;
-        private float m_CurrentTorque;
+        public float m_CurrentTorque;
         private Rigidbody m_Rigidbody;
         private const float k_ReversingThreshold = 0.01f;
 
