@@ -15,6 +15,7 @@ TagManager:
   - LapTimer
   - Spike
   - AICar
+  - CarSelection
   layers:
   - Default
   - TransparentFX

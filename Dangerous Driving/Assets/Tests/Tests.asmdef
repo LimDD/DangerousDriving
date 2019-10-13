@@ -2,12 +2,11 @@
     "name": "Tests",
     "references": [
         "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
         "GameAssembly",
         "FirstAidAssembly",
         "laptimerassembly",
-        "prefabsassembly",
-        "ShockwaveCollider"
+        "CarAssembly",
+        "GameOverAssembly"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

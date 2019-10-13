@@ -1,7 +1,9 @@
 {
-    "name": "GameAssembly",
+    "name": "GameOverAssembly",
     "references": [
-        "GUID:62e97bc68dc50fd43bcfc4b639cbc99d"
+        "laptimerassembly",
+        "GameAssembly",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
