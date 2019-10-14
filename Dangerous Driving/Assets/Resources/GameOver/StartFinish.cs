@@ -30,15 +30,17 @@ public class StartFinish : MonoBehaviour
 
         if (other.CompareTag("Trigger1"))
         {
-            trigger1 = true; //trigger1 true
+            if (startline)
+            {
+                trigger1 = true; //trigger1 true
 
-            lt.settrigger1flag();
-
+                lt.settrigger1flag();
+            }
         }
 
         if (other.CompareTag("StartFinish"))
         {
-            if (trigger1 == true) 
+            if (startline == true && trigger1 == true) 
             {
 
                 lt.setfinishflag();
