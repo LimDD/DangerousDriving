@@ -9,6 +9,7 @@ public class CarSelect : MonoBehaviour
 {
     // Start is called before the first frame update
     private List<GameObject> models;
+    public Dropdown selectTrack;
     public int selectionIndex = 0;
     private int colourIndex = 0;
     //public Material[] BodyColorMat;
@@ -36,7 +37,6 @@ public class CarSelect : MonoBehaviour
     private void Update()
     {
         //transform.Rotate(new Vector3(0.0f, Input.GetAxis("Mouse X")));
-       
     }
 
     public void Select(int index)
@@ -56,7 +56,16 @@ public class CarSelect : MonoBehaviour
     {
         //PlayerPrefs.SetInt("ColourSelected", colourIndex);
         PlayerPrefs.SetInt("CarSelected", selectionIndex);
-        SceneManager.LoadScene(1);
+        // 0 = Drift track, 1 = Sprint track
+        switch (selectTrack.value)
+        {
+            case 0:
+                SceneManager.LoadScene(1);
+                break;
+            case 1:
+                SceneManager.LoadScene(3);
+                break;
+        }
     }
 
     public void Left()
