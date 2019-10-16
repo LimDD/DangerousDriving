@@ -16,6 +16,7 @@ TagManager:
   - Spike
   - AICar
   - CarSelection
+  - Zombie
   layers:
   - Default
   - TransparentFX
