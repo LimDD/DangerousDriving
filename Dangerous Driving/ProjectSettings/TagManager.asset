@@ -17,6 +17,7 @@ TagManager:
   - AICar
   - CarSelection
   - Zombie
+  - Wall
   layers:
   - Default
   - TransparentFX

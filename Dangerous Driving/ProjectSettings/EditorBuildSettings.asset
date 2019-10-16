@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/GameOver/GameOver.unity
     guid: c66cc19ee2d696f4c9661e9ac5de823a
+  - enabled: 1
+    path: Assets/Resources/Asset/Scenes/Sprint Track.unity
+    guid: 46478303f7c601e4e8584cb7f8d31d7f
   m_configObjects: {}
