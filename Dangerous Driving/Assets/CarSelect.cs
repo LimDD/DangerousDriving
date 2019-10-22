@@ -26,11 +26,8 @@ public class CarSelect : MonoBehaviour
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
-
-        if (this.gameObject.tag == "CarSelection")
-        {
+      
             models[selectionIndex].SetActive(true);
-        }
         
     }
 
