@@ -65,11 +65,7 @@ public class HealthBar : MonoBehaviour
             if (health <= 0)
             {
                 player.transform.position = respawnPoint.transform.position;
-                player.transform.position = respawnPoint.transform.position;
-                player.transform.position = respawnPoint.transform.position;
-                player.transform.position = respawnPoint.transform.position;
-                player.transform.position = respawnPoint.transform.position;
-                player.transform.position = respawnPoint.transform.position;
+                
                 SetHealth(100);
             } else
             {
