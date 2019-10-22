@@ -16,11 +16,12 @@ public class HealthBar : MonoBehaviour
     public bool healthRemaining;
     public Transform player;
     public Transform respawnPoint;
+    
+    
    
     // Start is called before the first frame update
     void Start()
     {
-
         
         healthRemaining = true;
         SetHealth(100);
@@ -64,8 +65,8 @@ public class HealthBar : MonoBehaviour
             
             if (health <= 0)
             {
-                player.transform.position = respawnPoint.transform.position;
                 
+                player.transform.position = respawnPoint.transform.position;
                 SetHealth(100);
             } else
             {
