@@ -18,15 +18,14 @@ public class ZombieCollisions : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Zombie"))
+        if (other.gameObject.CompareTag("Zombie"))
         {
             other.gameObject.SetActive(false);
 
             hb.UpdateHealth(-3.0f);
         }
-
     }
 }
 
