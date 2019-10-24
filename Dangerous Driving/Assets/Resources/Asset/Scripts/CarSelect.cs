@@ -19,7 +19,7 @@ public class CarSelect : MonoBehaviour
     void Start()
     {
         //renderer = this.GetComponent<Renderer>();
-        //selectionIndex = PlayerPrefs.GetInt("CarSelected");
+        selectionIndex = PlayerPrefs.GetInt("CarSelected");
         //colourIndex = PlayerPrefs.GetInt("ColourSelected");
         models = new List<GameObject>();
         foreach(Transform t in transform)
