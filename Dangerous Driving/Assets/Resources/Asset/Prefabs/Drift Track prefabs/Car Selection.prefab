@@ -149,6 +149,37 @@ Transform:
   m_Father: {fileID: 142684484396196820}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5503090577697061246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142684483035058089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BodyColorMat:
+  - {fileID: 2100000, guid: 51fff36c3365ecd4e9b8d93d7330a348, type: 2}
+  - {fileID: 2100000, guid: ebb9b02114a05304c9d45ee7ff88e681, type: 2}
+  - {fileID: 2100000, guid: 96c4a65a0743ed04496bf81f8394b245, type: 2}
+  CurrMat: {fileID: 0}
+  renderer: {fileID: 142684483036991849}
+--- !u!114 &142684484731798275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142684483035058091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0187487657997b8488ca6164d56d1bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hb: {fileID: 0}
 --- !u!1 &142684483039862030
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,19 +7724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
   skidParticles: {fileID: 0}
---- !u!114 &142684484731798275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142684483035058091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0187487657997b8488ca6164d56d1bb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hb: {fileID: 0}
 --- !u!1 &142684484747413530
 GameObject:
   m_ObjectHideFlags: 0
@@ -25909,24 +25927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Car: {fileID: 456265779310704112}
---- !u!114 &5503090577697061246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142684483035058089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd479c327c4bbb4478fae54fc9654475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BodyColorMat:
-  - {fileID: 2100000, guid: 51fff36c3365ecd4e9b8d93d7330a348, type: 2}
-  - {fileID: 2100000, guid: ebb9b02114a05304c9d45ee7ff88e681, type: 2}
-  - {fileID: 2100000, guid: 96c4a65a0743ed04496bf81f8394b245, type: 2}
-  CurrMat: {fileID: 0}
-  renderer: {fileID: 142684483036991849}
 --- !u!1001 &5503090577697061243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25938,11 +25938,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 5594611417361512144, guid: b39a8b74f44847346b2e8dbddd819698,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5594611417361345264, guid: b39a8b74f44847346b2e8dbddd819698,
         type: 3}

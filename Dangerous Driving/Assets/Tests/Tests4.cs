@@ -14,10 +14,10 @@ namespace Tests
         {
             GameObject car = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Car folder/Prefabs/Car"));
             GameObject healthBarGameObject = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Scripts/HealthBar"));
-            GameObject spikeStripGameObject = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Prefabs/SpikeStrip 1"));
+            GameObject spikeStripGameObject = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Obstacles/SpikeStripPrefab"));
 
             HealthBar healthBar = healthBarGameObject.GetComponent<HealthBar>();
-
+            car.GetComponent<StartFinish>().enabled = false;
             SpikeDMG spike = car.GetComponent<SpikeDMG>();
             spike.health = healthBar;
 
