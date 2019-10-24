@@ -23,7 +23,8 @@ namespace Tests
             Astriod = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("AsteroidPack/PAsteroid"));
             Car = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Car folder/Prefabs/Car"));
             Health = MonoBehaviour.Instantiate<GameObject>(Resources.Load<GameObject>("Asset/Scripts/HealthBar"));
-
+            StartFinish startFinish = Car.GetComponent<StartFinish>();
+            startFinish.enabled = false;
             healthBar = Health.GetComponent<HealthBar>();
             initialHealth = 100;
             shockwave = Car.GetComponent<ShockwaveCollider>();
@@ -35,6 +36,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator Test3WithEnumeratorPasses()
         {
+            
             Car.transform.position = new Vector3(0, 0, 0);
             Astriod.transform.position = new Vector3(0, 0, 0);
 

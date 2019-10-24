@@ -119677,6 +119677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car Selection
       objectReference: {fileID: 0}
+    - target: {fileID: 142684483648370163, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 142684483648370161, guid: 466ad7e22c0a9c24f94139a84d08b966,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -119932,6 +119937,41 @@ PrefabInstance:
       propertyPath: hb
       value: 
       objectReference: {fileID: 2128263228}
+    - target: {fileID: 142684483035058091, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 142684483035058088, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 142684483648370160, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: selectionIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 142684483738350552, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 142684484396196823, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 456265779310704112, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 806330558115188836, guid: 466ad7e22c0a9c24f94139a84d08b966,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466ad7e22c0a9c24f94139a84d08b966, type: 3}
 --- !u!1001 &316998398490785597
@@ -120178,6 +120218,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 967541918463020085, guid: 680a8f2da1acbf34fb0acaa812d8cadf,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5594611416387266610}
+    - target: {fileID: 967541918463020085, guid: 680a8f2da1acbf34fb0acaa812d8cadf,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 247656109}
     - target: {fileID: 7102900363776252100, guid: 680a8f2da1acbf34fb0acaa812d8cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120283,16 +120333,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 967541918463020085, guid: 680a8f2da1acbf34fb0acaa812d8cadf,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 5594611416387266610}
-    - target: {fileID: 967541918463020085, guid: 680a8f2da1acbf34fb0acaa812d8cadf,
-        type: 3}
-      propertyPath: respawnPoint
-      value: 
-      objectReference: {fileID: 247656109}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680a8f2da1acbf34fb0acaa812d8cadf, type: 3}
 --- !u!1001 &2898895227165602772
@@ -120441,6 +120481,11 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1038370375}
+    - target: {fileID: 5365507751972611731, guid: 97997796dd0a5d441aaee1592327c1ca,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97997796dd0a5d441aaee1592327c1ca, type: 3}
 --- !u!4 &5594611416387266610 stripped
