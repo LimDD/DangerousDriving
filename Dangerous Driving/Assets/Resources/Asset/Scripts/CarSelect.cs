@@ -12,6 +12,7 @@ public class CarSelect : MonoBehaviour
     public Dropdown selectTrack;
     public int selectionIndex = 0;
     private int colourIndex = 0;
+    public GameObject currentActiveCar;
     //public Material[] BodyColorMat;
     //Material CurrMat;
     //Renderer renderer;
@@ -26,12 +27,9 @@ public class CarSelect : MonoBehaviour
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
-
-        if (this.gameObject.tag == "CarSelection")
-        {
+      
             models[selectionIndex].SetActive(true);
-        }
-        
+            currentActiveCar = models[selectionIndex];
     }
 
     private void Update()
@@ -88,6 +86,11 @@ public class CarSelect : MonoBehaviour
             selectionIndex = 0;
         }
         models[selectionIndex].SetActive(true);
+    }
+
+    public void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
     }
     
     //public void BlueColor()
